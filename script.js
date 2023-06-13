@@ -12,3 +12,9 @@ function getCompChoice() {
      }
      return compChoice
 }
+
+// function that recieves user input and converts it to lowercase
+function getPlayerChoice() {
+    playerEntry = prompt("Rock, Paper, or Scissors?: ")
+    playerChoice = playerEntry.toLowerCase()
+}
