@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,23 +17,18 @@
             <h1>Rock, Paper, Scissors Vs. <strong>SUPERCOMPUTER</strong></h1>
         </div>
     
-        <div class="options">
-            <button class="myButton" data-value="rock">Rock</button>
-            <button class="myButton" data-value="paper">Paper</button>
-            <button class="myButton" data-value="scissors">Scissors</button>
+        <div id="game-buttons">
+            <button data-choice="ROCK" id="rock">ROCK</button>
+            <button data-choice="PAPER" id="paper">PAPER</button>
+            <button data-choice="SCISSORS" id="scissors">SCISSORS</button>
         </div>
         
-        <div class="score">
-            <div class="comp-score align">
-                <h2>Comp Score:</h2>
-                <h2>0</h2>
-            </div>
-    
-            <div class="player-score align">
-                <h2>Player Score:</h2>
-                <h2>0</h2>
-            </div>
-    
+        <div class="results">
+            <h2 class="player">Player Choice: </h2>
+            <h2 class="comp">Comp Choice: </h2>
+            <h2 class="result">Result: </h2>
+            <h2 class="compScore">Computer Score: </h2>
+            <h2 class="playerScore">Player Score: </h2>
         </div>
     </div>
     
